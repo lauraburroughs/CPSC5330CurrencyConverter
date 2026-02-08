@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var eurSwitch: UISwitch!
     @IBOutlet weak var gbpSwitch: UISwitch!
-    @IBOutlet weak var jnySwitch: UISwitch!
+    @IBOutlet weak var jpySwitch: UISwitch!
     
     
     
@@ -35,6 +35,14 @@ class ViewController: UIViewController {
         
         // Clear the error message
         errorMessage.text = ""
+        
+        // Read which currencies to do
+        let eurSelected = eurSwitch.isOn
+        let gbpSelected = gbpSwitch.isOn
+        let jpySelected = jpySwitch.isOn
+        
+        // Pass to Screen 2
+    print("USD: \(usdAmount), EUR: \(eurSelected), GBP: \(gbpSelected), JPY: \(jpySelected)")
     }
     
     

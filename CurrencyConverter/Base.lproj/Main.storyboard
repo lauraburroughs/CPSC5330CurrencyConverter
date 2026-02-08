@@ -71,7 +71,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="160" translatesAutoresizingMaskIntoConstraints="NO" id="hIy-Kz-E9e">
                                         <rect key="frame" x="0.0" y="192" width="342" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JNY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lK-3n-UHd">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JPY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lK-3n-UHd">
                                                 <rect key="frame" x="0.0" y="29.666666666666629" width="121" height="20.333333333333329"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -119,13 +119,13 @@
                         <outlet property="errorMessage" destination="5sN-JX-sGe" id="GgA-Zm-jBN"/>
                         <outlet property="eurSwitch" destination="6Ey-Wd-GoO" id="l1y-jb-HPG"/>
                         <outlet property="gbpSwitch" destination="FQC-pb-LNc" id="GgA-yL-t5O"/>
-                        <outlet property="jnySwitch" destination="g1O-Ic-6v1" id="Goj-CA-DqS"/>
+                        <outlet property="jpySwitch" destination="g1O-Ic-6v1" id="6Yt-1I-tvB"/>
                         <outlet property="usdTextField" destination="rPe-K4-rxr" id="h4u-Bu-18Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-69" y="137"/>
+            <point key="canvasLocation" x="54" y="222"/>
         </scene>
     </scenes>
 </document>
