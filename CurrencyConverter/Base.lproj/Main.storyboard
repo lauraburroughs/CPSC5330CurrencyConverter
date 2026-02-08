@@ -15,11 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Currency Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP7-hR-OQb">
-                                <rect key="frame" x="126" y="124" width="150" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP7-hR-OQb">
+                                <rect key="frame" x="86.000000000000014" y="154" width="230.33333333333337" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.26024985109999998" green="0.35279296869999999" blue="0.34952142089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="bN3-P6-KQl">
@@ -92,7 +91,13 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75o-Sp-gA2">
                                         <rect key="frame" x="0.0" y="241.66666666666666" width="342" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="CONVERT"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="CONVERT">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.26024985109999998" green="0.35279296869999999" blue="0.34952142089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="baseForegroundColor" red="0.99325615170000003" green="0.9861682302" blue="0.93889226930000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -103,6 +108,8 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bN3-P6-KQl" secondAttribute="trailing" constant="30" id="6Ht-R6-DRl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bN3-P6-KQl" secondAttribute="bottom" constant="30" id="NKA-vX-lp6"/>
                             <constraint firstItem="bN3-P6-KQl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Y92-Vl-LGu"/>
+                            <constraint firstItem="EP7-hR-OQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZRp-IZ-Ov9"/>
+                            <constraint firstItem="EP7-hR-OQb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="p8E-Ub-Xy7"/>
                         </constraints>
                     </view>
                 </viewController>
