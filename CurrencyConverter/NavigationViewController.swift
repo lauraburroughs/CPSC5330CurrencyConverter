@@ -8,6 +8,13 @@
 import UIKit
 
 class NavigationViewController: UIViewController {
+    
+    // Variables needed
+    var usdAmount: Int = 0
+    var eurSelected: Bool = false
+    var gbpSelected: Bool = false
+    var jpySelected: Bool = false
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +27,6 @@ class NavigationViewController: UIViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
     */
 
 }

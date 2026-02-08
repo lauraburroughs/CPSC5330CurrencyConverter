@@ -100,6 +100,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="convertButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iKs-SC-Vfb"/>
+                                            <segue destination="FY4-TA-aae" kind="show" identifier="showResults" id="3WA-qj-tbI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -132,17 +133,17 @@
             <objects>
                 <viewController id="FY4-TA-aae" customClass="NavigationViewController" customModule="CurrencyConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MtW-1N-bmr">
-                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fdg-wl-WnS">
-                                <rect key="frame" x="86.000000000000014" y="154" width="230.33333333333337" height="30"/>
+                                <rect key="frame" x="86.000000000000014" y="92" width="230.33333333333337" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="0.26024985109999998" green="0.35279296869999999" blue="0.34952142089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jZf-4D-SVF">
-                                <rect key="frame" x="50" y="574" width="302" height="20.333333333333371"/>
+                                <rect key="frame" x="50" y="511.99999999999994" width="302" height="20.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLi-b2-PGQ">
                                         <rect key="frame" x="0.0" y="0.0" width="151" height="20.333333333333332"/>
@@ -159,7 +160,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TL6-HF-9K6">
-                                <rect key="frame" x="30" y="675" width="402" height="101"/>
+                                <rect key="frame" x="30" y="681" width="402" height="101"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1LU-qG-Zoq">
                                         <rect key="frame" x="0.0" y="0.0" width="402" height="20.333333333333332"/>
@@ -227,6 +228,7 @@
                             <constraint firstItem="jZf-4D-SVF" firstAttribute="centerX" secondItem="MtW-1N-bmr" secondAttribute="centerX" id="zhY-oI-mR3"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="UsC-PD-yTv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qt5-n9-WOI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
