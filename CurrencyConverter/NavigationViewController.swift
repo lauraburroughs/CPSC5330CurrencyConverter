@@ -34,7 +34,7 @@ class NavigationViewController: UIViewController {
         super.viewDidLoad()
         
         // USD entered
-        usdAmountLabel.text = "\(usdAmount)"
+        usdAmountLabel.text = "Amount USD entered: \(usdAmount)"
         
         
         // EUR
