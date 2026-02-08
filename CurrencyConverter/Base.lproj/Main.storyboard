@@ -229,6 +229,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UsC-PD-yTv"/>
+                    <connections>
+                        <outlet property="eurLabel" destination="69G-vg-Ps1" id="aPO-HL-9Ie"/>
+                        <outlet property="gbpLabel" destination="ass-zg-l2D" id="LuV-XK-uqY"/>
+                        <outlet property="jpyLabel" destination="sjq-un-ka7" id="q7f-lu-Yj4"/>
+                        <outlet property="usdAmountLabel" destination="NUF-y4-Rsf" id="uhF-Ze-sye"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qt5-n9-WOI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
