@@ -92,6 +92,9 @@
                                             </backgroundConfiguration>
                                             <color key="baseForegroundColor" red="0.99325615170000003" green="0.9861682302" blue="0.93889226930000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="convertButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfs-z3-I9z"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -112,6 +115,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YLK-K7-iBh" secondAttribute="bottom" constant="30" id="xoB-mW-3jz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="Ddx-L5-sls" id="k7V-oA-xqI"/>
+                        <outlet property="usdTextField" destination="Rsk-5V-MB3" id="tag-En-2rl"/>
+                        <outlet property="usdToEurSwitch" destination="BBN-Jg-P7T" id="pWB-zX-ndW"/>
+                        <outlet property="usdToGbpSwitch" destination="iZa-X6-g0O" id="Tt6-Zq-UeR"/>
+                        <outlet property="usdToJpySwitch" destination="Q5b-oQ-xlk" id="O06-cu-FbW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
