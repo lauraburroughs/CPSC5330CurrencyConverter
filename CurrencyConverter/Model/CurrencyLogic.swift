@@ -14,16 +14,16 @@ struct CurrencyLogic {
     static let gbpRate = 0.79
     static let jpyRate = 140.0
     
-    static func convert(amouth: Int, to currency: String) -> Double {
+    static func convert(amount: Int, to currency: String) -> Double {
         switch currency {
             case "EUR":
-            return Double(amouth) * eurRate
-        case "GBP":
-            return Double(amouth) * gbpRate
-        case "JPY":
-            return Double(amouth) * jpyRate
-        default:
-            return 0.0
+                return Double(amount) * eurRate
+            case "GBP":
+                return Double(amount) * gbpRate
+            case "JPY":
+                return Double(amount) * jpyRate
+            default:
+                return 0.0
         }
     }
 }

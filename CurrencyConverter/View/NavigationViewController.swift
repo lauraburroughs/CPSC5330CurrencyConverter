@@ -22,11 +22,6 @@ class NavigationViewController: UIViewController {
     @IBOutlet weak var jpyLabel: UILabel!
     @IBOutlet weak var usdAmountLabel: UILabel!
     
-    
-    
-    func convertCurrency(amount: Int, rate: Double) -> Double {
-        return Double(amount) * rate
-    }
 
     
     
@@ -39,7 +34,7 @@ class NavigationViewController: UIViewController {
         
         // EUR
         if eurSelected {
-            let eurValue = convertCurrency(amount: usdAmount, rate: 0.92)
+            let eurValue = CurrencyLogic.convert(amount: usdAmount, to: "EUR")
             eurLabel.text = "\(usdAmount) USD = \(Int(eurValue)) EUR"
             eurLabel.isHidden = false
         } else {
@@ -48,7 +43,7 @@ class NavigationViewController: UIViewController {
         
         // GBP
         if gbpSelected {
-            let gbpValue = convertCurrency(amount: usdAmount, rate: 0.79)
+            let gbpValue = CurrencyLogic.convert(amount: usdAmount, to: "GBP")
             gbpLabel.text = "\(usdAmount) USD = \(Int(gbpValue)) GBP"
             gbpLabel.isHidden = false
         } else {
@@ -57,7 +52,7 @@ class NavigationViewController: UIViewController {
         
         // JPY
         if jpySelected {
-            let jpyValue = convertCurrency(amount: usdAmount, rate: 140.0)
+            let jpyValue = CurrencyLogic.convert(amount: usdAmount, to: "JPY")
             jpyLabel.text = "\(usdAmount) USD = \(Int(jpyValue)) JPY"
             jpyLabel.isHidden = false
         } else {
